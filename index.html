@@ -1,100 +1,60 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOVA.GAME - MiniGame & eSports Komunitas</title>
+  <title>MOVA.GAME Landing</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f4;
       margin: 0;
       padding: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 5vh auto;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 30px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
     }
     h1 {
-      font-size: 24px;
-      color: #2d2d2d;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
     p {
-      font-size: 16px;
-      color: #555;
-      margin: 20px 0;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
     }
-    .btn, .lang-btn {
+    a.button {
       display: inline-block;
-      padding: 10px 18px;
-      background-color: #2e8bff;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1rem;
+      font-weight: bold;
       color: white;
+      background-color: #1abc9c;
+      border: none;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 14px;
-      border-radius: 6px;
-      margin: 5px;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s;
     }
-    .btn:hover, .lang-btn:hover {
-      background-color: #1c6ed9;
+    a.button:hover {
+      background-color: #16a085;
     }
     footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #aaa;
-    }
-    .lang-selector {
-      margin-bottom: 20px;
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #ccc;
     }
   </style>
-  <script>
-    function switchLanguage(lang) {
-      const content = {
-        id: {
-          title: "🎮 Gabung Komunitas MOVA.GAME",
-          desc1: "Tebak skor harian & mainkan mini game seru. Raih poin virtual setiap hari!",
-          desc2: "Tidak ada taruhan uang asli. 100% hiburan & prediksi eSports & olahraga.",
-          btn: "👉 Gabung Sekarang"
-        },
-        ko: {
-          title: "🎮 MOVA.GAME 커뮤니티에 참여하세요",
-          desc1: "매일 경기 예측하고 미니게임을 즐기며 가상 포인트를 모아보세요!",
-          desc2: "실제 돈 없이 100% 무료! 스포츠 & e스포츠 예측 중심 커뮤니티입니다.",
-          btn: "👉 지금 참여하기"
-        },
-        en: {
-          title: "🎮 Join MOVA.GAME Community",
-          desc1: "Predict daily scores & play mini games. Collect virtual points every day!",
-          desc2: "No real-money betting. 100% fun & esports prediction community.",
-          btn: "👉 Join Now"
-        }
-      };
-      document.getElementById('main-title').textContent = content[lang].title;
-      document.getElementById('desc1').textContent = content[lang].desc1;
-      document.getElementById('desc2').textContent = content[lang].desc2;
-      document.getElementById('join-btn').textContent = content[lang].btn;
-    }
-  </script>
 </head>
 <body>
-  <div class="container">
-    <div class="lang-selector">
-      <a href="#" class="lang-btn" onclick="switchLanguage('id')">🇮🇩 Indonesia</a>
-      <a href="#" class="lang-btn" onclick="switchLanguage('ko')">🇰🇷 한국어</a>
-      <a href="#" class="lang-btn" onclick="switchLanguage('en')">🇬🇧 English</a>
-    </div>
-    <h1 id="main-title">🎮 Gabung Komunitas MOVA.GAME</h1>
-    <p id="desc1">Tebak skor harian & mainkan mini game seru. Raih poin virtual setiap hari!</p>
-    <p id="desc2">Tidak ada taruhan uang asli. 100% hiburan & prediksi eSports & olahraga.</p>
-    <a class="btn" id="join-btn" href="https://mova.game/affliate?recom=9f5826dbe93474acddcf972f859295bc:0c25873feb21b65b8aae5d03e25306a2" target="_blank">👉 Gabung Sekarang</a>
-    <footer>
-      &copy; 2025 MOVA.GAME - Komunitas Tebak Skor & eSports
-    </footer>
-  </div>
+  <h1>Welcome to MOVA.GAME</h1>
+  <p>Enjoy eSports and Mini-Game predictions with virtual rewards. Join our Telegram community for the latest events and announcements!</p>
+  <a class="button" href="https://tinyurl.com/3t8jezwv" target="_blank">Join Telegram Channel</a>
+  <footer>&copy; 2025 MOVA STUDIO. All rights reserved.</footer>
 </body>
 </html>
