@@ -15,7 +15,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
     h1 {
@@ -43,20 +43,38 @@
     a.button:hover {
       background-color: #16a085;
     }
+    img.banner {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
     footer {
-      position: absolute;
-      bottom: 20px;
+      margin-top: 40px;
       font-size: 0.9rem;
       color: #ccc;
     }
   </style>
 </head>
 <body>
+
+  <!-- 🎁 Giveaway Image Banner -->
+  <img src="https://mova-game.github.io/giveaway-banner.png" alt="Giveaway Eksklusif" class="banner">
+
+  <!-- 🔥 Main Text -->
   <h1>Welcome to MOVA</h1>
-  <p>A community-driven sports prediction experience.
-No real-money betting, no risk — just insights and fun.
-Join our Telegram for exclusive tips & stats!</p>
+  <p>A community-driven sports prediction experience.<br>
+     No real-money betting, no risk — just insights and fun.<br>
+     Join our Telegram for exclusive tips & stats!</p>
+
+  <!-- 🚀 Telegram CTA Button -->
   <a class="button" href="https://t.me/+qbQ7SVUOSRxkZmU9" target="_blank">With Telegram Channel</a>
+
+  <!-- 📄 Footer -->
   <footer>&copy; 2025 MOVA STUDIO. All rights reserved.</footer>
+
 </body>
 </html>
